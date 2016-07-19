@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!-- START ADDING LIBRARY -->
+    <link rel="stylesheet" href="datatables/jquery.dataTables.css">
+    <script src="datatables/jquery-1.12.1.min.js"></script><!-- -->
+    <script src="datatables/jquery.dataTables.js"></script><!-- -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#datatable').dataTable(); // Menjalankan plugin DataTables pada id contoh. id contoh merupakan tabel yang kita gunakan untuk menampilkan data
+        } );
+    </script>
+    <!-- END ADDING LIBRARY -->
+    
+    <title>Data Table Example</title>
+</head>
+<body>
+    Hello there, i'm putuguna[dot]com and i will give you short explanation about working with datatable in page HTML
+    <br>
+    <br>
+    <!-- start creating table -->
+    <table cellpadding="1" border="1" cellspacing="1" id="datatable" class="display" >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Jobs</th>
+                <th>Hobby</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>putuguna</td>
+                <td>Developer</td>
+                <td>Sport</td>
+                <td>24 years old</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>anton</td>
+                <td>Driver</td>
+                <td>fishing</td>
+                <td>21 years old</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Sayu Niga</td>
+                <td>Midwife</td>
+                <td>Swimming</td>
+                <td>24 years old</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>Anita</td>
+                <td>Song writer</td>
+                <td>Swimming</td>
+                <td>26 years old</td>
+                <td>Female</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Jobs</th>
+            <th>Hobby</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
